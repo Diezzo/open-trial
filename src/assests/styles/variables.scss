@@ -1,0 +1,12 @@
+@import "mixins";
+@import "colors";
+@import "media";
+
+//TODO Для расширения: вынести шрифты и нормализаторы в отдельные модули
+
+$font-family:Arial, serif;
+
+body{
+  padding: 0;
+  margin: 0;
+}

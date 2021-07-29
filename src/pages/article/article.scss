@@ -1,0 +1,13 @@
+@import "../../assests/styles/variables";
+
+.article{
+  @include defaultBlock;
+  font-family: $font-family;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__body{
+    margin-top: 20px;
+    text-align: left;
+  }
+}

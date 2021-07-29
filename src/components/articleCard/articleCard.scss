@@ -1,0 +1,29 @@
+@import "../../assests/styles/variables";
+
+
+.ArticleCard{
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  @include defaultShadow;
+  text-align: left;
+  font-family: $font-family;
+  &__image{
+    width: 100%;
+  }
+  &__category{
+    padding: 10px 0;
+    font-size: 12px;
+    color: $color-blue;
+  }
+  &__title{
+    margin-bottom: 6px;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  &__previewText{
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}

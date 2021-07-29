@@ -1,0 +1,21 @@
+//TODO Для расширения: скорректировать миксины по медиа
+
+$tablet-resolution-min: 768px;
+$tablet-resolution-max: 1239px;
+$desktop-resolution: 1240px;
+
+@mixin breakpoints($type) {
+ @if $type == desktop {
+    @media (min-width: $desktop-resolution) {
+      @content;
+    }
+  } @else if $type == responsive {
+    @media (max-width: $tablet-resolution-max) {
+      @content;
+    }
+  }  @else if $type == smartphone {
+    @media (max-width: $tablet-resolution-min) {
+      @content;
+    }
+  }
+}
